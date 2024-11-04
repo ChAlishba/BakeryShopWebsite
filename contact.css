@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    padding-left: 100px;
+    padding-right: 100px;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid grey;
+    padding: 1rem 0;      
+}
+
+nav h2 {
+    color: rgba(191, 0, 255, 0.728);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 3.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: rgba(191, 0, 255, 0.728);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1024px;
+    width: 100%;
+}
+
+table {
+    height: 150px;
+}
+
+input, textarea, select {
+    width: 100%;
+    font-size: 17px;
+}
+
+input[type="button"]:hover {
+    background-color: rgba(191, 0, 255, 0.728);
+    color: white;
+}
+
+.contact {
+    position: relative;
+    padding: 20px;
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    right: -120px; 
+    height: 300px;
+}
+
+.contact-input {
+    width: 50%;
+    height: 200px;
+    float: left;
+}
+
+.footer {
+    margin-top: 20px;
+    width: 100%;
+    padding: 40px 20px; 
+    background: #f1f1f1; 
+    color: black;
+    display: flex;
+    justify-content: space-around; 
+    gap: 1em; 
+    text-align: center;
+    flex-wrap: wrap; 
+}
+
+.footer div {
+    flex: 1 1 200px;
+    padding: 10px;
+}
+
+.footer div h3 {
+    font-weight: 500; 
+    margin-bottom: 15px; 
+    line-height: 1.5;
+}
+
+.footer1 a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold; 
+}
+
+.footer1 a:hover {
+    color: rgba(191, 0, 255, 0.728); 
+    font-weight: bold;
+}
+
+.footer3 p {
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.end {
+    font-size: 8px;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    background: white; 
+}
+
+.end-btn {
+    margin: 20px 20px;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.end-btn:hover {
+    background-color: rgba(191, 0, 255, 0.728);
+    color: #f1f1f1;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        
+    }
+    
+    .contact-input {
+        width: 100%;
+        height: auto;
+    }
+    
+    .image {
+        position: static;
+        margin-top: 20px;
+        height: auto;
+        width: 100%;
+    }
+    
+    .footer {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    body {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    nav h2 {
+        font-size: 1.2rem;
+    }
+    
+    nav ul {
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    
+    .footer div {
+        flex: 1 1 100%;
+        padding: 10px 0;
+    }
+    
+    .end-btn {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/* our form css */
+/* From Uiverse.io by Yaya12085 */ 
+.form {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+  }
+  
+  .form .title {
+    color: rgba(191, 0, 255, 0.728);;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .form input {
+    outline: 0;
+    border: 1px solid rgb(219, 213, 213);
+    padding: 8px 14px;
+    border-radius: 8px;
+    width: 100%;
+    height: 50px;
+  }
+  
+  .form textarea {
+    border-radius: 8px;
+    height: 100px;
+    width: 100%;
+    resize: none;
+    outline: 0;
+    padding: 8px 14px;
+    border: 1px solid rgb(219, 213, 213);
+  }
+  
+  .form button {
+    align-self: flex-end;
+    padding: 8px;
+    outline: 0;
+    border: 0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: rgba(191, 0, 255, 0.728);;
+    color: #fff;
+    cursor: pointer;
+  }
+      
+

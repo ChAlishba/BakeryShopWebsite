@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins' , sans-serif;
+    box-sizing: border-box;
+}
+body {
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background:white; 
+    
+}
+main {
+    max-width: 2200px;
+     
+    width: 100%;
+padding-left: 100px;
+padding-right: 100px;
+  
+}
+
+/*  Navigation  */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding: 1rem 0;
+}
+.navbar {
+    padding: 20px 20px;
+}
+nav h2 {
+    color: rgba(191, 0, 255, 0.728);
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+    margin: 0;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: rgba(191, 0, 255, 0.728);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: flex; 
+        gap: 1rem; 
+    }
+    nav {
+        padding: 0.5rem; 
+    }
+    .navbar {
+        padding: 10px; 
+    }
+}
+.logo{
+    color:rgba(191, 0, 255, 0.728);
+    margin-left: 30px;
+}
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:30px;
+    
+}
+.container .card{
+   position: relative;
+    max-width: 300px;
+    height:220px;
+    background-color: #fff;
+    display: flex;
+    margin: 30px 30px;
+    padding:20px 20px;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+   
+
+}
+.container .card:hover{
+    height: 320px;
+}
+
+.container .card .imgBx{
+    position:relative;
+    width:260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.container .card .imgBx img{
+    max-width: 100%;
+    border-radius: 10px;
+   
+}
+.container .card .content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.container .card:hover .content{
+    
+    visibility: visible;
+    opacity: 1;
+    margin-top:-40px;
+    transition-delay: 0.3s;
+}
+ .btn{
+    background-color:rgba(191, 0, 255, 0.728);
+    margin: 20px 20px;
+    padding:10px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: white;
+}
+footer{
+    text-align: center;
+    margin:40px 40px;
+}
+footer p{
+    font-weight: bold;
+
+}
+
+
+
+

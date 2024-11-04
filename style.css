@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+main {
+    max-width: 1024px;
+    width: 100%;
+    flex-wrap: hide;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding: 1rem 0;
+}
+.navbar {
+    padding: 20px 20px;
+}
+nav h2 {
+    color: rgba(191, 0, 255, 0.728);
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+    margin: 0;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: rgba(191, 0, 255, 0.728);
+    font-weight: bold;
+    text-decoration: underline;
+}
+.paragraph-text{
+    color:white;
+    font-size: larger;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: flex; 
+        gap: 1rem; 
+    }
+    nav {
+        padding: 0.5rem; 
+    }
+    .navbar {
+        padding: 10px; 
+    }
+}
+.section-1 {
+    background: url(https://img.freepik.com/free-photo/delicious-cake-with-fruits_23-2150727658.jpg?t=st=1730047561~exp=1730051161~hmac=69f09a0aef73f5f8a88c15022dde4a9baf762de8494fc3a226234c37fcd2a0bb&w=826);
+    height: 550px;
+    display: flex;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+
+h1, p {
+    position: relative;
+    color: white;
+    z-index: 1;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color:white;
+    margin-top: 200px;
+}
+
+p {
+    font-size: 1em;
+    text-align: center;
+    color:black;
+    padding-left: 20px;
+}
+
+.btn {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(191, 0, 255, 0.728);
+    margin: 30px 30px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.btn:hover {
+    color: black;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.product-1:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: 0 0 100px rgb(175, 121, 226);
+    border-radius: 10px;
+    color: black;
+}
+
+.top-part img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.middle-text h1 {
+    justify-content: center;
+    color: black;
+    margin: 10px 10px;
+    padding: 20px 10px;
+}
+
+.bottom-part h1, p {
+    color: black;
+    margin: 20px;
+    display: flex;
+}
+
+.img3 {
+    height: 200px;
+    width: 200px;
+    border-color: grey;
+}
+
+.img1 {
+    height: 200px;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    margin: 40px 40px;
+}
+
+footer p {
+    font-weight: bold;
+}
+
+/* Responsive adjustments using media queries */
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .section-1 {
+        height: 400px;
+    }
+
+    .product-container {
+        grid-template-columns: auto auto;
+    }
+
+    .middle-text h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        gap: 0.5rem;
+    }
+
+    .section-1 h1 {
+        font-size: 1.5em;
+        margin-top: 150px;
+    }
+
+    .product-container {
+        grid-template-columns: auto;
+    }
+
+    .middle-text h1 {
+        font-size: 1.2rem;
+    }
+}
+
